@@ -16,7 +16,7 @@ const fetchItems = async () => {
       _per_page: 5
     }
 
-    const { data } = await axios.get('http://localhost:3001/items', {
+    const { data } = await axios.get('https://nuxt-apartments.onrender.com/items', {
       params
     })
     items.value = data.data
