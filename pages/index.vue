@@ -70,7 +70,7 @@ watch(filters, fetchItems)
 <template>
   <div class="flex mb-6">
     <div
-        class="w-full h-96 bg-[url('public/background-main.jpg')] bg-cover brightness-50">
+        class="w-full h-96 bg-[url('assets/images/background-main.jpg')] bg-cover brightness-50">
     </div>
     <div
         class="text-white absolute w-full h-96 md:text-6xl text-4xl font-medium text-center flex items-center justify-center">
