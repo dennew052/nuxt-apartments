@@ -1,75 +1,11 @@
-# Nuxt 3 Minimal Starter
+# nuxt-apartments
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Создано с помощью NuxtJS 3 (SSR) Composition API + Vite + Tailwind CSS
 
-## Setup
+Сайт, на котором можно просматривать апартаменты и фильтровать их
 
-Make sure to install the dependencies:
+# https://nuxt-apartments-client.onrender.com/
 
-```bash
-# npm
-npm install
+<p align="center"><img  src="https://github.com/dennew052/nuxt-apartments/assets/42219192/44e7a0df-7b5a-48b0-a1dd-532ecb69ee0b"></p>
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<p align="center"><img  src="https://github.com/dennew052/nuxt-apartments/assets/42219192/57f099ee-8e8a-4c36-a2f9-ed7da58ac965"></p>
