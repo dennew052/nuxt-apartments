@@ -6,7 +6,7 @@ const route = useRoute()
 const items = ref([])
 const fetchItems = async () => {
   try {
-    const {data} = await axios.get(`https://nuxt-apartments.onrender.com/items/${route.params.id}`)
+    const {data} = await axios.get(`https://96392043176edfb5.mokky.dev/items/${route.params.id}`)
     items.value = data
   } catch (e) {
     console.log(e)

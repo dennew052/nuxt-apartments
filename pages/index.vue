@@ -11,16 +11,16 @@ const isRequestExecuted = ref(false)
 const fetchItems = async () => {
   try {
     const params = {
-      "type[0]": filters.type,
-      _page: currentPage.value,
-      _per_page: 5
+      "type[0]": filters.type || undefined,
+      page: currentPage.value,
+      limit: 5
     }
 
-    const { data } = await axios.get('https://nuxt-apartments.onrender.com/items', {
+    const { data } = await axios.get('https://96392043176edfb5.mokky.dev/items', {
       params
     })
-    items.value = data.data
-    paginationInfo.value = data
+    items.value = data.items
+    paginationInfo.value = data.meta
   } catch (e) {
     console.log(e)
   } finally {
@@ -30,13 +30,14 @@ const fetchItems = async () => {
 
 const onChangeSelect = (event) => {
   filters.type = event.target.value
+  openPageByNum(1)
 }
 
 const nextPage = () => {
 
   if (!isRequestExecuted.value) {
-    console.log(paginationInfo.value.next)
-    if (paginationInfo.value.next) {
+    console.log(paginationInfo.value.remaining_count > 1)
+    if (paginationInfo.value.remaining_count > 1) {
       currentPage.value++
       fetchItems()
     }
@@ -45,7 +46,7 @@ const nextPage = () => {
 
 const previousPage = () => {
   if (!isRequestExecuted.value) {
-    if (paginationInfo.value.prev) {
+    if (paginationInfo.value.current_page > 1) {
       currentPage.value--
       fetchItems()
     }
@@ -54,7 +55,7 @@ const previousPage = () => {
 
 const openPageByNum = (num) => {
   console.log('Проверка ' + num)
-  if (Number(num) >= 1 && Number(num) <= paginationInfo.value.pages) {
+  if (Number(num) >= 1 && Number(num) <= paginationInfo.value.total_pages) {
     currentPage.value = Number(num)
     fetchItems()
   }
