@@ -4,7 +4,7 @@
 
 Сайт, на котором можно просматривать апартаменты и фильтровать их
 
-# https://nuxt-apartments-client.onrender.com/
+# https://nuxt-apartments-jfhn.onrender.com
 
 <p align="center"><img  src="https://github.com/dennew052/nuxt-apartments/assets/42219192/44e7a0df-7b5a-48b0-a1dd-532ecb69ee0b"></p>
 
